@@ -18,8 +18,7 @@ dinner <- list(name="pasta")
 
 
 # Extract your 'dinner' element from your list and save it in a vector called 'dinner'
-dinner$name
-dinner <- dinner$name
+meals$dinner <- c("pasta")
 
 
 ### Bonus ### 

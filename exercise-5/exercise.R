@@ -2,7 +2,7 @@
 
 # Read data into a variable called `grants` using the `read.csv` function
 getwd()
-grants <- read.csv(file="data/gates_money.csv")
+grants <- read.csv(file="data/gates_money.csv", stringsAsFactors = FALSE)
 View(grants)
 
 # Use the View function to look at your data
@@ -18,7 +18,8 @@ is.vector(spending)
 # Unfortunately, it will not be a vector by default, so you must transform it using the as.vector function
 
 org <- grants$organization
-as.vector(org)
+as.vector(org) #don't need to do this if you did stringAsFactor = FALSE in read.csv()
+
 
 ### Now you can ask some more interesting questions about the dataset.  Store your answers in variables ###
 

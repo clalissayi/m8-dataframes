@@ -25,4 +25,4 @@ opponents2 <- c("Dolphins", "Rams", "49ers", "Jets")
 # Assign your dataframe rownames of their opponents
 row.names(mydata) <- opponents2
 
-mydata
+View(mydata)
